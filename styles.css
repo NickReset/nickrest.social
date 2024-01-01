@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+
+* {
+    animation: fadeIn 0.8s;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg, #1a1a1a 0%, #000000 100%);
+}
+
+.content {
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 30%;
+    text-align: center;
+}
+
+.content .header .profile {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid white;
+    height: 6rem;
+}
+
+.content .header .profile #profilePic {
+    width: 5rem;
+    height: 5.2rem;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 2px solid white;
+}
+
+.content .header .profile .names {
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.content .header .profile .names #username {
+    font-size: 2rem;
+    font-family: 'Roboto Bold', sans-serif;
+}
+
+.content .header .profile .names #name {
+    font-size: 1.2rem;
+    margin-top: 3.5rem;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    color: grey;
+}
+
+.content .body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+}
+
+.content .body .content {
+    width: 100%;
+    height: 100%;
+}
+
+.body .content {
+    text-align: left;
+    flex-direction: column;
+    margin: 0 auto;
+    display: flex;
+    line-height: 0;
+}
+
+#title {
+    font-family: 'Roboto Bold', sans-serif;
+    border-bottom: 2px solid white;
+}
+
+#bubble {
+    background-color: #1a1a1a6e;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    margin-top: 20px;
+}
+
+.project {
+    margin: 0 auto;
+    width: 90%;
+    justify-content: space-between;
+    border: 1px solid white;
+    background-color: #1a1a1a6e;
+    border-radius: 10px;
+    text-align: left;
+    line-height: 5px;
+    padding-left: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.project:hover {
+    width: 92%;
+    transition: 0.2s;
+}
+
+.project + .project {
+    margin-top: 20px;
+}
+
+.project .projectTitle {
+    font-family: 'Roboto Bold', sans-serif;
+    font-size: 0.9rem;
+}
+
+.project .projectDescription {
+    font-size: 0.9rem;
+    color: grey;
+}
+
+.project .projectLanguage {
+    display: flex;
+    margin-top: 15px;
+}
+
+.profile .projectLanguage #language {
+    font-size: 0.8rem;
+    margin-top: 25px;
+    margin-left: 30px;
+}
+
+.project .projectLanguage .languageColor {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+    background-color: grey;
+    margin-top: 13px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+        width: 50%;
+    }
+
+    .project {
+        width: 90%;
+    }
+
+    .project .projectTitle {
+        font-size: 0.6rem;
+    }
+
+    .project .projectDescription {
+        font-size: 0.8rem;
+        line-height: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .content {
+        width: 80%;
+    }
+}
